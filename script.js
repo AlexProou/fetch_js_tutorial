@@ -5,7 +5,6 @@ fetch('https://jsonplaceholder.typicode.com/posts/?_start=0&_limit=12',
             'Accept': 'application/json',
             'Content-Type': 'application/json'           
         }
-
     }
 ).then(response => response.json())
     .then(data => {
@@ -22,8 +21,6 @@ fetch('https://jsonplaceholder.typicode.com/posts/?_start=0&_limit=12',
 
         `;
         cardContainer.appendChild(postElement);
-
     })
     console.log(data);
-
 })
